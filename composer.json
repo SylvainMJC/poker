@@ -1,0 +1,11 @@
+{
+    "name": "sylvain/poker",
+    "description": "none",
+    "authors": [
+        {
+            "name": "Sylvain",
+            "email": "sylvain.mj.conan@gmail.com"
+        }
+    ],
+    "require": {}
+}
