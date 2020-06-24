@@ -6,7 +6,7 @@ function GETrequestAPI(){
     var options = {
       method:'GET'
     }
-      //fetch('http://localhost/poker/php/api.php/api/email/add', options)
+    //fetch('http://localhost/poker/php/api.php/api/email/add', options)
     fetch('http:/not-quite-a-poker-app.herokuapp.com/src/php/api.php/api/email/get', options)
         .then(function (response) {
          

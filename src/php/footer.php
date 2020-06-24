@@ -1,8 +1,12 @@
 
 
 
+<div class="img">
+    <img clss="images" src="../../card_images/lourdes.jpg">
+</div>
+
 <footer id="footer" class=" bg-dark">
-    <div class=".container">
+    <div class="container">
         <div class="row">
             <div class="col">
                 <h4 class="text-light text-center">TINP</h2>
