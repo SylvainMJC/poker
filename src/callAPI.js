@@ -6,8 +6,8 @@ function GETrequestAPI(){
     var options = {
       method:'GET'
     }
-  
-    fetch('http://localhost/poker/src/php/api.php/api/email/get', options)
+      //fetch('http://localhost/poker/php/api.php/api/email/add', options)
+    fetch('http:/not-quite-a-poker-app.herokuapp.com/src/php/api.php/api/email/get', options)
         .then(function (response) {
          
             let plop = response.json();
@@ -28,8 +28,8 @@ function POSTrequestAPI(){
       method:'POST',
       body: JSON.stringify(emailInput.value)
     }
-  
-    fetch('http://localhost/poker/src/php/api.php/api/email/add', options)
+    //fetch('http://localhost/poker/php/api.php/api/email/add', options)
+    fetch('http://not-quite-a-poker-app.herokuapp.com/php/api.php/api/email/add', options)
         .then(function (response) {
          
             let plop = response.json();

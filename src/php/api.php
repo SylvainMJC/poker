@@ -16,16 +16,24 @@
     $data = json_decode(file_get_contents('php://input'),true);
 
     //save Email to BDD
-    /*
+    
     $host = "localhost";
     $port = "5432";
     $dbname = "poker_bdd";
     $user = "poker_user";
     $password = "2013022015478369";
     $conn_string = `host={$host} port={$port} dbname={$dbname} user={$user} password={$password}`;
-    $dbconn4 = pg_connect($conn_string);
-    */
-
+    
+    $dbconnection = pg_connect($conn_string);/*
+    if (!$dbconnection) {
+      echo "Database connection error.\n";
+      exit;
+    }
+    else{
+      pg_query($dbconnection, `INSERT INTO users(email) VALUES ({$data})`);
+    }
+    pg_close();
+*/
     //send Email to user
 
     
